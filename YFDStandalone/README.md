@@ -11,6 +11,16 @@
 | 版本 | 1.0.0 |
 | minSdk / targetSdk | 23 / 28 |
 
+## 还原完整 MainActivity
+
+`MainActivity.java` 体积较大，仓库中以 gzip+base64 分片存放。克隆后执行：
+
+```bash
+bash scripts/decode_MainActivity.sh
+```
+
+会生成完整的 `app/src/main/java/com/hyw/yfdinstaller/MainActivity.java`（约 62KB）。
+
 ## 功能概要
 
 - 多选 APK、批量安装
@@ -23,6 +33,8 @@
 
 ## 构建
 
-Android Studio 打开本目录，安装 SDK 35 与 JDK 17，同步 Gradle 后 Build APK。
+1. `bash scripts/decode_MainActivity.sh`
+2. Android Studio 打开本目录
+3. SDK 35 + JDK 17，同步 Gradle 后 Build APK
 
-> 说明：Java 源码由 jadx 从 APK 反编译得到，可能与原始工程在格式与局部结构上有差异，但逻辑与包配置与发布 APK 一致。
+> Java 源码由 jadx 从 APK 反编译得到，格式与局部结构可能与原始工程不同，逻辑与包配置与发布 APK 一致。
