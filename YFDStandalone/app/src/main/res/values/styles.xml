@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">#fff4f7fc</item>
+        <item name="android:alertDialogTheme">@style/GlassDialog</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#ff2f6bff</item>
+        <item name="android:statusBarColor">#fff4f7fc</item>
+        <item name="android:navigationBarColor">#fff4f7fc</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="GlassDialog" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:background">#fff7faff</item>
+        <item name="android:colorAccent">#ff2f6bff</item>
+    </style>
+</resources>
