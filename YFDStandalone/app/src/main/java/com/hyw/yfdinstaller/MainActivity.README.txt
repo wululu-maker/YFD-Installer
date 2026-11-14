@@ -1,0 +1,5 @@
+MainActivity.java is large. Sources are split into MainActivity.java.part0 .. part4.
+Run: bash scripts/join_MainActivity.sh
+to reconstruct MainActivity.java before building.
+
+Or download YFDStandalone-source.zip from the session artifacts which already contains the full file.
