@@ -8,7 +8,7 @@
         android:label="YFD 独立安装器"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.hyw.yfdinstaller.MainActivity"
+            android:name="com.ma.yfdinstaller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <provider
-            android:name="com.hyw.yfdinstaller.ApkProvider"
+            android:name="com.ma.yfdinstaller.ApkProvider"
             android:authorities="com.yfdinstaller.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" />

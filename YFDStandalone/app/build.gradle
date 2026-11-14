@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.hyw.yfdinstaller'
+    namespace 'com.ma.yfdinstaller'
     compileSdk 35
     defaultConfig {
         applicationId 'com.yfdinstaller'
