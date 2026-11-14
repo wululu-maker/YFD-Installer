@@ -1,0 +1,26 @@
+ic /* synthetic */ void lambda$importIncoming$29(Uri uri) {
+        try {
+            final File f = copyUri(uri, new File(installDir(), System.currentTimeMillis() + "_" + safeName(displayName(uri))));
+            runOnUiThread(new Runnable() { // from class: com.hyw.yfdinstaller.MainActivity$$ExternalSyntheticLambda8
+                @Override // java.lang.Runnable
+                public final void run() {
+                    MainActivity.this.lambda$importIncoming$27(f);
+                }
+            });
+        } catch (Exception e) {
+            runOnUiThread(new Runnable() { // from class: com.hyw.yfdinstaller.MainActivity$$ExternalSyntheticLambda9
+                @Override // java.lang.Runnable
+                public final void run() {
+                    MainActivity.this.lambda$importIncoming$28(e);
+                }
+            });
+        }
+    }
+
+    @Override // android.app.Activity
+    protected void onDestroy() {
+        removeFloatingPanel();
+        super.onDestroy();
+        this.worker.shutdownNow();
+    }
+}
